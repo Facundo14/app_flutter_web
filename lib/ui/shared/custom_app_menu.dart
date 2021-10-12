@@ -40,6 +40,18 @@ class _TabletDesktopMenu extends StatelessWidget {
             text: 'Otra Página',
             onPress: () => locator<NavigationService>().navigateTo('/123456456'),
             color: Colors.black,
+          ),
+          SizedBox(width: size.width * 0.01),
+          CustomFlatButton(
+            text: 'Stateful 100',
+            onPress: () => locator<NavigationService>().navigateTo('/stateful/100'),
+            color: Colors.black,
+          ),
+          SizedBox(width: size.width * 0.01),
+          CustomFlatButton(
+            text: 'Provider 200',
+            onPress: () => locator<NavigationService>().navigateTo('/provider?q=200'),
+            color: Colors.black,
           )
         ],
       ),
@@ -73,6 +85,18 @@ class _MobileMenu extends StatelessWidget {
           CustomFlatButton(
             text: 'Otra Página',
             onPress: () => locator<NavigationService>().navigateTo('/123456456'),
+            color: Colors.black,
+          ),
+          SizedBox(width: size.width * 0.01),
+          CustomFlatButton(
+            text: 'Stateful 100',
+            onPress: () => locator<NavigationService>().navigateTo('/stateful/100'),
+            color: Colors.black,
+          ),
+          SizedBox(width: size.width * 0.01),
+          CustomFlatButton(
+            text: 'Provider 200',
+            onPress: () => locator<NavigationService>().navigateTo('/provider?q=200'),
             color: Colors.black,
           )
         ],

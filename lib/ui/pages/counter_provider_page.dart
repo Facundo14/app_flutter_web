@@ -11,8 +11,8 @@ class CounterProviderPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return ChangeNotifierProvider(
-      create: (_) => CounterProvider(),
-      child: _CounterProviderPageBody(),
+      create: (_) => CounterProvider('5'),
+      child: const _CounterProviderPageBody(),
     );
   }
 }
@@ -30,8 +30,8 @@ class _CounterProviderPageBody extends StatelessWidget {
       body: Column(
         mainAxisAlignment: MainAxisAlignment.center,
         children: [
-          CustomAppMenu(),
-          Spacer(),
+          const CustomAppMenu(),
+          const Spacer(),
           Text(
             'Contador Provider',
             style: TextStyle(fontSize: size.width * 0.03),
@@ -63,7 +63,7 @@ class _CounterProviderPageBody extends StatelessWidget {
               ),
             ],
           ),
-          Spacer(),
+          const Spacer(),
         ],
       ),
     );

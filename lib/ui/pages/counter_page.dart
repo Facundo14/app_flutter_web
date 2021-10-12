@@ -18,8 +18,8 @@ class _CounterPageState extends State<CounterPage> {
       body: Column(
         mainAxisAlignment: MainAxisAlignment.center,
         children: [
-          CustomAppMenu(),
-          Spacer(),
+          const CustomAppMenu(),
+          const Spacer(),
           Text(
             'Contador Stateful',
             style: TextStyle(fontSize: size.width * 0.03),
@@ -63,7 +63,7 @@ class _CounterPageState extends State<CounterPage> {
               ),
             ],
           ),
-          Spacer(),
+          const Spacer(),
         ],
       ),
     );
